@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky!</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="https://kit.fontawesome.com/45ba6f1765.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="HeadingFontColor header">
+        <p>Sticky!<p>
+    </header>
+
+    <p class="HeadingFontColor">  Tip: Click and drag the bottom of notes to move them!</p>
+
+    <div  class="flex" style="width: 100vw;">
+        <button class="HeaderButton tooltip" id="Add" title="Add Sticky-Note!"><i class="fa-solid fa-plus"></i></button>
+        <button class="HeaderButton tooltip" id="Clear" title="Remove All Sticky-Notes"><i class="fa-solid fa-x"></i></button>
+    </div>
+  
+
+    <div id="StickyNotes">
+        
+    </div>
+    <script src="app.js" ></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+:root{
+    --BodyColor: #413C58;
+    --HeaderColor: #2D293D;
+
+    --HeadingFontColor: #fff; 
+    --NoteFontColor: #000; 
+
+    --ClearButtonColor: #DA4167;
+}
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--HeaderColor);
+    width: 100vw;
+
+    padding: 3vh;
+    font-size: 5vmin;
+}
+
+.HeaderButton{
+    padding-block: 3.5vmin;
+    padding-inline: 5vmin;
+
+    margin: 1vmin;
+    border-radius: 1000px;
+   
+    border: none;
+    font-size: 4vmin;
+
+    transition: .1s;
+}
+
+.HeaderButton:hover{
+    scale: 1.1;
+}
+
+
+#Add{
+    background-color: var(--HeaderColor);
+    color: var(--HeadingFontColor);
+}
+
+#Clear{
+    background-color: var(--ClearButtonColor);
+    color: var(--HeadingFontColor);
+}
+
+#StickyNotes{
+    width: 98vw;
+    height: 100vh;
+}
+body{
+    background-color: var(--BodyColor);
+}
+
+.Draggable{
+    width: 17vmin;
+    height: 17vmin;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Note{
+    background-color: pink;
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Note > textarea{
+    width: 12vmax;
+    height: 9vmax;
+
+    resize: none;
+
+    background-color: pink;
+    border: none;
+
+    text-align:center;
+
+    word-wrap: break-word;
+}
+
+.Note > input{
+    width: 12vw;
+    background-color: pink;
+    border: none;
+
+    text-align:center;
+
+    word-wrap: break-word;
+    font-size: 1.3vmax;
+}
+
+.Note > button{
+    background-color: pink;
+    border: none;
+
+    margin: 1vmax;
+    transition: .1s;
+}
+
+.Note > button:hover{
+    scale: 1.5;
+}
+
+.HeadingFontColor{
+    color:var(--HeadingFontColor);
+}
